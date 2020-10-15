@@ -19,11 +19,11 @@ def large(lst):
 
 
 odd = [-1]
-s1 = set()
+s1 = []
 s = str(input())
 for i in s:
     if i.isdigit():
-        s1.add(int(i))
+        s1.append(int(i))
 res = sorted(s1, reverse=True)
 out = large(s1)
 for i in out:
